@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.ts"></script>
+    <title>typescript1</title>
+  </head>
+  <body>
+    <!doctype html>
+
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link rel="stylesheet" href="/src/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="module" src="/src/main.ts"></script>
+        <title>Assignment Board</title>
+      </head>
+
+      <body>
+
+        <h1>Assignment Board</h1>
+
+        <!-- BOARD -->
+        <div id="board">
+          <div class="column">
+            <h2>New</h2>
+            <div id="newAssignments"></div>
+          </div>
+
+          <div class="column">
+            <h2>Doing</h2>
+            <div id="doingAssignments"></div>
+          </div>
+
+          <div class="column">
+            <h2>Done</h2>
+            <div id="doneAssignments"></div>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- CREATE ASSIGNMENT -->
+        <h2>Create Assignment</h2>
+
+        <form id="assignmentForm">
+          <input type="text" id="title" placeholder="Title" required />
+          <input
+            type="text"
+            id="description"
+            placeholder="Description"
+            required
+          />
+
+          <select id="category">
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option>
+            <option value="ux">UX</option>
+          </select>
+
+          <button type="submit">Create</button>
+        </form>
+
+        <hr />
+
+        <!-- CREATE MEMBER  -->
+        <h2>Create Member</h2>
+
+        <form id="memberForm">
+          <input type="text" id="memberName" placeholder="Name" required />
+
+          <select id="memberCategory">
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option>
+            <option value="ux">UX</option>
+          </select>
+
+          <button type="submit">Create Member</button>
+        </form>
+
+        <h2>Members</h2>
+        <div id="members"></div>
+      </body>
+    </html>
+  </body>
+</html>
